@@ -10,7 +10,8 @@ float notaf = 7.0;
 float notat;
 
 int main(){
-
+    printf("----------CALCULO NOTA PRUEBA 2 PARA APROVAR------------");
+    printf("********************************************************");
     printf("Ingrese nota tarea 1\n");
     scanf("%f",&tarea1);
     printf("Ingrese nota tarea 2\n");
