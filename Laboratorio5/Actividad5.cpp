@@ -6,19 +6,19 @@ float tarea3;
 float actitudinal;
 float prueba1;
 float prueba2;
-float notaf = 7.0;
+float notaf = 4.0;
 float notat;
 
 int main(){
-    printf("----------CALCULO NOTA PRUEBA 2 PARA APROVAR------------");
-    printf("********************************************************");
+    printf("----------CALCULO NOTA PRUEBA 2 PARA APROVAR------------\n");
+    printf("********************************************************\n");
     printf("Ingrese nota tarea 1\n");
     scanf("%f",&tarea1);
     printf("Ingrese nota tarea 2\n");
     scanf("%f",&tarea2);
     printf("Ingrese nota tarea 3\n");
     scanf("%f",&tarea3);
-     printf("Ingrese nota actitudinal\n");
+    printf("Ingrese nota actitudinal\n");
     scanf("%f",&actitudinal);
     printf("Ingrese nota prueba 1\n");
     scanf("%f",&prueba1);
