@@ -33,13 +33,12 @@ int main (){
                 //Pedir dos numeros al usuario 
                 printf("Ingrese el primer numero ");
                 scanf("%d", &numero1);
-                 printf("Ingrese el segundo numero ");
+                printf("Ingrese el segundo numero ");
                 scanf("%d", &numero2);
                 //realizar operacion
                 resultado = numero1 + numero2;
                  //Entregar el resultado 
-                 printf("Elresultado de la suma entre %d y %d es %d\n", numero1, numero2, resultado);
-
+                printf("Elresultado de la suma entre %d y %d es %d\n", numero1, numero2, resultado);
                 break;
         case 2: printf("RESTA\n");
                 //Pedir dos numeros al usuario 
