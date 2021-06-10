@@ -15,6 +15,7 @@ int main (){
     //Fibonacii f = fn-1 + fn-2
     fb = f0 + f1;
     printf("%d\n", fb);
+    //recalculamos variables 
     f0 = f1;
     f1 = fb;
   }
