@@ -3,7 +3,7 @@
 //ENTRADAS 
 int destino;
 int edad;
-
+int viajes;
 //SALIDAS
 
 int cant_pasajeros_destino;
@@ -24,6 +24,7 @@ int main(){
 
     //revisar tabla 
     if (edad < 15){ 
+
        if ( destino == 1){
         printf("El valor a pagar por su destino es :\n $2500\n");
        } else if ( destino ==2 ){
