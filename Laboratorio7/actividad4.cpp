@@ -15,10 +15,8 @@ int main(){
         } else {
             for (int j= 1 ; j <= num - 2 ; j ++){
                 //comprobar si j es divisor de i
-
-                while ( j % i == 0){
-
-                    printf("%d\n", i);
+                while ( i % j == 0){
+                    printf("primo\n");
                     break;
                 }
             }
