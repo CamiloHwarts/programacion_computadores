@@ -96,6 +96,11 @@ int main (){
             printf("Ganador\n");
             ganador= true;
         }
+        //En caso de empate
+        if (turnos < 9){
+            printf("Han empatado, si quieren jugar devuelta reinicien el programa\n");
+
+        }
 
         turnos ++;
     }
