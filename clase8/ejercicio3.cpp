@@ -9,13 +9,17 @@ int main (){
     int maximo = 7;
     int central ;
     int busqueda;
+    
+    printf("Ingrese el numero que desea buscar\n ");
+    scanf("%d",&busqueda);
 
     while(minimo <= maximo){
         central = (minimo + maximo)/2;
         if( busqueda == valores2[central]){
 
         printf("Elvalor %d se encutra en valores [%d]\n", busqueda, central);
-
+        break;
+        
         }else{
             if(valores2 [central]> busqueda){
                 maximo = central - 1;

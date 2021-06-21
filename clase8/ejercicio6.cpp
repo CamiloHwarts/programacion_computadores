@@ -11,14 +11,12 @@ int main (){
     int cantidad_clientes = 0;
 
     printf("Ingrese su nombre\n");
-    //strink
-    //cadenas no es necesario que tlleben &
-    scanf("%s ", nombre_clientes [0]);
+    //strink %s
+    //cadenas no es necesario que lleben &
+    scanf("%s", nombre_clientes [cantidad_clientes]);
     printf("Ingrese su apellido\n");
-    scanf("%s ", apellidos_clientes[0]);
+    scanf("%s", apellidos_clientes[cantidad_clientes]);
     cantidad_clientes ++;
-
-
     printf("Bienvenido %s %s !\n", nombre_clientes[0] , apellidos_clientes[0]);
 
     return 0;
