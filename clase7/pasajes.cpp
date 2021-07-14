@@ -19,23 +19,24 @@ int ganancias = 0;
 
 int main(){
 
-    //pedir edad
-    printf("Ingrese su edad\n");
-    scanf("%d", &edad);
-    //pedir destino
-    printf("Ingrese su destino\n");
-    scanf("%d", &destino);
-    printf("Su edad es : %d y su destino es: %d\n", edad, destino);
+    printf("Ingrese el numero de viajes que desea hacer\n");
+    scanf("%d", &viajes);
+    for(int i = 0 ; i < viajes ; i++){
+        //pedir edad
+        printf("Ingrese su edad\n");
+        scanf("%d", &edad);
+        //pedir destino
+        printf("Ingrese su destino\n");
+        scanf("%d", &destino);
+        printf("Su edad es : %d y su destino es: %d\n", edad, destino);
     
     //Crearemos bucle por destino
     /*while( destino1 < 30 ){
         destino1 += 1;
     }
-
          printf("El bus se llenado, no quedan mas pasajes\n");
          */
 
-    for(int i = 0 ; i < viajes ; i++){
     //Revisar tabla por destinos
         if ( destino == 1){
             destino1 ++;

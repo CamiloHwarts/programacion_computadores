@@ -27,20 +27,20 @@ char apellido_clientes[20];
 char direcciones[15];
 char metodo_pago[15];
 
+//Prototipos
+void menuBienvenida();
+void cartaDeSushi();
+void menuDeDestinos();
+char datosDeEnvio();
+char datosDeClientes();
+
 
 int main() {
   //for que repite la cantidad de pedido , lo temos como predeterminado 
   for(int i=0; i<3 ; i++){
   
   //Bienvenida del programa
-  printf("\n");
-  printf("\n");
-  printf("\n");
-  printf("-------------------------------------------------------\n");
-  printf("---------Bienvenido a nuestro local de Sushi!----------\n");
-  printf("-----------------------**SUSHINT**---------------------\n");
-  printf("---------Abierto desde las 18:00 hastas las 22:00------\n");
-  printf("\n");
+  menuBienvenida();
 
   /*Para ir empezando el programa , pedimos la hora y segun eso podemos proceder ha hacer un pedido*/
   printf("Ingrese hora de pedido\n");
@@ -52,14 +52,7 @@ int main() {
     if (1800<= hora && hora <=2200){
     
       // Mostramos la carta 
-      printf("La carta es\n");
-      printf("1. 10 piezas de sushi $3000\n");
-      printf("2. 20 piezas de sushi $6000\n");
-      printf("3. 30 piezas de sushi $9000\n");
-      printf("4. 40 piezas de sushi $12000\n");
-      printf("5. 50 piezas de sushi $15000\n");
-  
-      printf("\n");
+      cartaDeSushi();
       //inicializamos el precio 
       int precio = 0;
       //Bucle para repetir pedido si la persona desea agregar algo mas
@@ -97,29 +90,10 @@ int main() {
       scanf("%d",&algomas);
       
       }while( algomas == 1);
-      
-        printf("Necesitaremos los siguientes datos para proceder a repartir\n");
-        printf("Ingrese nombre cliente\n");
-        scanf("%s", &nombre_cliente[0]);
-        printf("\n");
-        printf("Ingrese apellido cliente\n");
-        scanf("%s", &apellido_clientes[0]);
-        printf("Nombre cliente : %s %s\n", nombre_cliente, apellido_clientes);
-        printf("\n");
-        printf("Ingrese un número de contacto\n");
-        scanf("%d", &contacto );
-        printf("\n");
+          datosDeClientes();
 
         do{
-
-        printf("Ingrese su zona(valor adicional del reparto)\n");
-        printf("1. Amanecer - Recabarren $1000\n");
-        printf("2. Centro $500\n");
-        printf("3. Barrio Ingles $1000\n");
-        printf("4. Fundo del carmen $1300\n");
-        printf("5. Santa Rosa - San Antonio $1000\n");
-        printf("6. Pedro de Valdivia $1000\n");
-        printf("7. Pueblo Nuevo - Alcantara $1000\n");
+          menuDeDestinos();
 
         scanf("%d", &zona);
 
@@ -264,4 +238,53 @@ int main() {
   }
   }
   return 0;
+}
+void menuBienvenida(){
+  printf("\n");
+  printf("\n");
+  printf("\n");
+  printf("-------------------------------------------------------\n");
+  printf("---------Bienvenido a nuestro local de Sushi!----------\n");
+  printf("-----------------------**SUSHINT**---------------------\n");
+  printf("---------Abierto desde las 18:00 hastas las 22:00------\n");
+  printf("\n");
+  
+}
+void cartaDeSushi(){
+      printf("La carta es\n");
+      printf("1. 10 piezas de sushi $3000\n");
+      printf("2. 20 piezas de sushi $6000\n");
+      printf("3. 30 piezas de sushi $9000\n");
+      printf("4. 40 piezas de sushi $12000\n");
+      printf("5. 50 piezas de sushi $15000\n");
+  
+      printf("\n");
+
+}
+void menuDeDestinos(){
+        printf("Ingrese su zona(valor adicional del reparto)\n");
+        printf("1. Amanecer - Recabarren $1000\n");
+        printf("2. Centro $500\n");
+        printf("3. Barrio Ingles $1000\n");
+        printf("4. Fundo del carmen $1300\n");
+        printf("5. Santa Rosa - San Antonio $1000\n");
+        printf("6. Pedro de Valdivia $1000\n");
+        printf("7. Pueblo Nuevo - Alcantara $1000\n");
+
+}
+char datosDeEnvio(){
+ 
+}
+char datosDeClientes(){
+        printf("Necesitaremos los siguientes datos para proceder a repartir\n");
+        printf("Ingrese nombre cliente\n");
+        scanf("%s", &nombre_cliente[0]);
+        printf("\n");
+        printf("Ingrese apellido cliente\n");
+        scanf("%s", &apellido_clientes[0]);
+        printf("Nombre cliente : %s %s\n", nombre_cliente, apellido_clientes);
+        printf("\n");
+        printf("Ingrese un número de contacto\n");
+        scanf("%d", &contacto );
+        printf("\n");
 }
