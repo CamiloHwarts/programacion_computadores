@@ -23,12 +23,11 @@ int main(){
 }
 int funcion(int x){
     x = x * x;
-    
     return x;
 }
 void funsion2(int& x){// int* <- direccion de momoria de numero
     //* <- indireccion
     //contenido de direccionde memoria apuntad por x
-    x = (x) * (x);
-}
+    x = x * x ;
 
+}

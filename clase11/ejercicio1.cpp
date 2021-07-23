@@ -1,21 +1,19 @@
 #include <stdio.h>
-
-void pedirOpcion(int* opcion, int menor, int mayor);
+#include "arreglosNumericos.h" 
+#include "interfazUsuario.h"
 
 int main(){
 
     int opcion;
     int numero1, numero2;
     int resultado;
+    int numeros[4];
+
+    holaMundo();
     pedirOpcion(&opcion, 1, 4);
     printf("la opcion es: %d\n", opcion);
- 
+    pedirNumerosArreglo(numeros, 4);
+    printf("La sumatoria es: %d\n", sumatoriaArreglo(numeros, 4));
+
     return 0;
-}
-void pedirOpcion(int* opcion, int menor, int mayor){
-    do{
-    printf("Ingrese la opcion\n");
-    scanf("%d", opcion);
-    }while((*opcion < menor) || (*opcion > mayor));
-    
 }
