@@ -5,7 +5,7 @@ int main(){
     
     // EJEMPLOS ARCHIVOS
 
-    // // Crear archivo nuevo o Sobreescribir existente 
+    // Crear archivo nuevo o Sobreescribir existente 
     // FILE* archivo = fopen("ejemplo.txt", "w");
     // fprintf(archivo, "Hola Mundo %d\n", 3);
     // fclose(archivo);
